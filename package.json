@@ -1,6 +1,6 @@
 {
   "name": "livelogit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A live logging script, which watches a file and stream in a ready made front end",
   "main": "index.js",
   "scripts": {
