@@ -1,6 +1,6 @@
 {
   "name": "livelogit",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A live logging script, which watches a file and stream in a ready made front end",
   "main": "index.js",
   "scripts": {
@@ -9,13 +9,24 @@
   "bin": {
     "livelogit": "./index.js"
   },
-  "keywords": [],
+  "contributers": [
+    "Ashok Mandal"
+  ],
+  "keywords": [
+    "tail",
+    "log",
+    "monitor"
+  ],
   "author": {
     "name": "Ashok Mandal",
     "email": "askipop@gmail.com",
     "url": "https://github.com/ashok1994"
   },
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ashok1994/livelogit"
+  },
+  "license": "MIT",
   "dependencies": {
     "express": "^4.17.1",
     "socket.io": "^2.3.0"
