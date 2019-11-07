@@ -11,6 +11,10 @@ function getFileNameFromCommandLine() {
     return process.argv[2];
 }
 
+function getPortFromCommandLine() {
+    return process.argv[3];
+}
+
 function createApp() {
     const app = express();
     const httpServer = http.createServer(app);
@@ -74,12 +78,12 @@ function attachIOHandler(io, meta) {
 
 
 function startApp(httpServer) {
-    const port = 3000;
+    const port = getPortFromCommandLine() || 3000;
     httpServer.listen(port, (err) => {
         if(err) {
             console.log(err.message);
         } else {
-            console.log(`Started server at http://localhost:3000`);
+            console.log(`Started server at http://localhost:${port}`);
         }
     });
 }
