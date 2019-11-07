@@ -5,11 +5,12 @@ Monitor any live log file in front end easily
 To install  
 
 ```bash
-npm i livelogit
+npm i -g livelogit
 ```
 
 Usage:
 ```
-livelogit [filename]
+npx livelogit [filename] [port]
 ```
 
+Port defaults to 3000
